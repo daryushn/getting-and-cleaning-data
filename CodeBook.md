@@ -77,7 +77,7 @@ The following is a description of the flow and transformations performed inside 
 19. Turns all variables/columns/measurements with the exception of *'subject'* and *'activity'* into rows by "gathering" the variables and places the result into the **df_tidy** data frame.
 20. Splits the newly created variable/column in step 1 into 4 separate variables/columns with the separator being the dot, e.g. the one column containing *'tbodyacc.max.x'* will become 4 separate columns containing *'t'*, *'bodyacc'*, *'max'* and *'x'* respectively.
 21. Sorts the resulting data frame.
-22. Saves the resulting data frame as a CSV file.
+22. Saves the resulting data frame as a TXT file.
 23. Returns the resulting data frame as the function's return value.
 
 ## Resulting tidy data set variable description
@@ -90,5 +90,5 @@ The final tidy data set variables are as follows:
 4. **feature** : chr - name of measurement.
 5. **measure.type** : chr - type of measurement - either *'mean'* for *'mean value'* or *'std'* for *'standard deviation'*.
 6. **axis** : chr - axis that the measurement is for, i.e. *'x'*, *'y'*, *'z'*. Note: for some measurements the axis is not applicable. These measurements will have *'NA'* as their *'axis'* value.
-7. **value** : num - the normalised measurement value.
+7. **value** : num - the measurement value.
 

@@ -119,7 +119,7 @@ meanMeasurements <- function()
         df_tidy <- arrange(df_tidy, subject, activity, domain, feature, measure.type)
         
         # Save the final output data frame
-        write.csv(df_tidy, file="tidy.csv", row.names = FALSE)
+        write.table(df_tidy, file="tidy.txt", row.names = FALSE)
         
         df_tidy
 }

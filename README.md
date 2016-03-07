@@ -16,6 +16,6 @@ In order to run the **meanMeasurements()** function:
 4. Set the working directory to the directory containing the **run_analysis.R** file.
 5. Load the **run_analysis.R** file.
 6. Call the **meanMeasurements()** function.
-7. The output tidy data set will be saved as a CSV file in the working directory and will have the name **tidy.csv**.
+7. The output tidy data set will be saved as a TXT file in the working directory and will have the name **tidy.txt**.
 
 
